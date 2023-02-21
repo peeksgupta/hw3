@@ -1,22 +1,17 @@
-<h1>Trip Highlights</h1>
-
-  <ul>
-   <%= @place.name %></a>
-  </ul>
-
-<h3>Posts</h3>
+<h1>Travel Logs for <%= @place.name %></h1>
 
 <p>
     <% for post in @posts %>
-        <h2> <%= post["title"]%> </h2>
-        <h6> <%= post["posted_on"]%> </h6>
+        <h3> <%= post["title"]%> </h3>
+        <h5> <%= post["posted_on"]%> </h5>
         <p> <%= post["description"]%> </p>
     <% end %>
 </p>
 
- <p>
-     <a href="/posts/new?place_id=<%= @place["id"] %>">Add New Post for this Trip</a>
-  </p>
-  <p>
+<p>
+     <a href="/posts/new?place_id=<%= @place["id"] %>">Add New Post for this Place</a>
+</p>
+  
+<p>
     <a href="/places">Back to List of Places</a>
 </p>
