@@ -1,0 +1,23 @@
+<h1>Trip Highlights</h1>
+
+  <ul>
+   
+    <li>
+     <%= @place.name %></a>
+    </li>
+   
+  </ul>
+
+<h3>Posts</h3>
+
+  <ul>
+    <% for post in @place.posts %>
+      <li>
+        <%= "#{post.title}, #{post.description}, #{post.posted_on}" %>
+      </li>
+    <% end %>
+  </ul>
+
+ <p>
+    <a href= "/posts/new?place_id=<%= @place.id %> "> Add new post for this trip</a>
+  </p>
