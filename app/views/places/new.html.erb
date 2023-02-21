@@ -1,10 +1,17 @@
 <%= form_with model: @place do |form| %>
   <p>
-    <%= form.label "name", "Enter place of travel" %>
+    <%= form.label "name", "Enter City or Country of Travel" %>
+    <br>
     <%= form.text_field "name" %>
-  <%= form.submit %>
+  </p>
+
+  <br>
+  
+  <p>
+    <%= form.submit %>
+  </p>
 <% end %>
 
 <p>
-    <a href="/places">Back to List of Places</a>
+  <a href="/places">Back to List of Places</a>
 </p>
