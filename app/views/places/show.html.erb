@@ -1,11 +1,7 @@
 <h1>Trip Highlights</h1>
 
   <ul>
-   
-    <li>
-     <%= @place.name %></a>
-    </li>
-   
+   <%= @place.name %></a>
   </ul>
 
 <h3>Posts</h3>
@@ -19,7 +15,7 @@
 </p>
 
  <p>
-    <a href= "/posts/new?place_id=<%= @place.id %> "> Add new post for this trip</a>
+     <a href="/posts/new?place_id=<%= @place["id"] %>">Add New Post for this Trip</a>
   </p>
   <p>
     <a href="/places">Back to List of Places</a>

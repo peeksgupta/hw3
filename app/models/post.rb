@@ -1,3 +1,3 @@
 class Post < ApplicationRecord
-  has_many :posts
+  # talks to the "posts" table
 end

@@ -1,3 +1,3 @@
 class Place < ApplicationRecord
-  belongs_to :place
+  # talks to the "places" table
 end
